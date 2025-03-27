@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet"></link>
+    <title>Student Management System</title>
+</head>
+<body>
+    <header>
+        <div id="search-section" class="d-flex">
+            <input id="search" type="text" placeholder="Search" />
+            <button class="btn" onclick="searchName()">Search</button>
+        </div>
+        <div id="sort-bar">
+            <button id="a-z" class="btn" onclick="sortAtoB()">Sort A&#129106;Z</button>
+            <button id="z-a" class="btn" onclick="sortBtoA()">Sort Z&#129106;A</button>
+            <button id="sort-marks" class="btn" onclick="sortByMarks()">Sort By Marks</button>
+            <button id="sort-passing" class="btn" onclick="sortByPassing()">Sort By Passing</button>
+            <button id="sort-class" class="btn" onclick="sortByClass()">Sort By Class</button>
+            <button id="sort-gender" class="btn" onclick="sortByGender()">Sort By Gender</button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <table border="1" id="table">
+                <thead id="thead">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email Address</th>
+                        <th>Class</th>
+                        <th>Gender</th>
+                        <th>City</th>
+                        <th>Marks</th>
+                        <th>Passing</th>
+                    <tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
