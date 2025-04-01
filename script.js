@@ -42,7 +42,7 @@ function displayData(data){
 function searchName(){
     let searchVal = document.getElementById("search").value;
     let searchData = dataArr.filter((item)=>{
-        if(item.first_name.toLowerCase().includes(searchVal) || item.last_name.toLowerCase().includes(searchVal)){
+        if(item.first_name.toLowerCase().includes(searchVal) || item.last_name.toLowerCase().includes(searchVal) || item.email.toLowerCase().includes(searchVal)){
             return item;
         }
     });
