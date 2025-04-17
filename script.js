@@ -40,7 +40,7 @@ function displayData(data){
 
 // Search functionality
 function searchName(){
-    let searchVal = document.getElementById("search").value;
+    let searchVal = document.getElementById("search").value.toLowerCase();
     let searchData = dataArr.filter((item)=>{
         if(item.first_name.toLowerCase().includes(searchVal) || item.last_name.toLowerCase().includes(searchVal) || item.email.toLowerCase().includes(searchVal)){
             return item;
